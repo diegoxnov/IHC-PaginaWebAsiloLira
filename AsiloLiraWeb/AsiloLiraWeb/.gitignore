@@ -1,0 +1,31 @@
+# .NET gitignore 
+# Build
+bin/
+obj/
+out/
+build/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Dependencias
+packages/
+*.nupkg
+
+# Logs
+*.log
+
+# Archivos de sistema
+Thumbs.db
+ehthumbs.db
+*.DS_Store
+
+# Configuraciones locales
+appsettings.Development.json

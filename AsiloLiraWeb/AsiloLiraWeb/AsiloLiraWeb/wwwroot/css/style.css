@@ -12,6 +12,7 @@ body {
 }
 .title1 {
     margin: 3rem;
+    font-family: "Mulish", sans-serif;
     font-weight: bold;
     font-size: 4rem;
     color: #4b4b4b;
@@ -66,5 +67,62 @@ body {
 /*Texto o parrafo general*/
 .texto {
     font-family: "Mulish", sans-serif;
+    text-align: justify;
 }
+
+/*testo degradado*/
+.texto-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.texto-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0.05), /* más claro arriba */
+        rgba(0, 0, 0, 0.05), /* intermedio */
+        rgba(0, 0, 0, 0.05) /* más claro abajo */
+    );
+    border-radius: 10px;
+}
+/*Efecto de voltear la tarjeta*/
+.flip-card {
+  background: transparent;
+  width: 100%;
+  height: 250px;
+  perspective: 1000px; /* Necesario para 3D */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-back {
+  background-color: #f5ebdd;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
 

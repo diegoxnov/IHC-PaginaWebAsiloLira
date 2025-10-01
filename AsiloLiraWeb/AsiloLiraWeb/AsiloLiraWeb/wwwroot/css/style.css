@@ -45,7 +45,7 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    filter: brightness(70%); /* oscurece la imagen */
+    filter: brightness(60%); /* oscurece la imagen */
 }
 
 
@@ -62,5 +62,9 @@ body {
     text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
     z-index: 10;
 }
-
+    
+/*Texto o parrafo general*/
+.texto {
+    font-family: "Mulish", sans-serif;
+}
 

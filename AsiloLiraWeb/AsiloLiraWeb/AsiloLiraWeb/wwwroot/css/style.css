@@ -18,6 +18,14 @@ body {
     color: #4b4b4b;
 }
 
+.title2 {
+    margin: 3rem;
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #5c4033;
+}
+
 .button {
     color: #4b4b4b;
     background-color: #c4b9ab;

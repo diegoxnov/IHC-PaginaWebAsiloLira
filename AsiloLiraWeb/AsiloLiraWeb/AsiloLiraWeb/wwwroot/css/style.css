@@ -19,10 +19,16 @@ body {
 }
 
 .title2 {
-    margin: 3rem;
     font-family: "Mulish", sans-serif;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
+    color: #5c4033;
+}
+
+.title3 {
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
     color: #5c4033;
 }
 
@@ -31,7 +37,7 @@ body {
     background-color: #c4b9ab;
     border: 0px;
     border-radius: 30px;
-    padding: 0.5rem 2rem;
+    
     box-shadow: -2px 1.5px 1px rgba(0,0,0,0.3);
     font-weight:bold;
 }
@@ -75,6 +81,15 @@ body {
 /*Texto o parrafo general*/
 .texto {
     font-family: "Mulish", sans-serif;
+    color: #4b4b4b;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.text2 {
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    color: #5c4033;
     text-align: justify;
 }
 

@@ -63,7 +63,9 @@ body {
     filter: brightness(60%); /* oscurece la imagen */
 }
 
-
+.position-relative{
+    margin:auto;
+}
 /* Título encima de TODO */
 .titulo-superpuesto {
     position: absolute;
@@ -77,7 +79,25 @@ body {
     text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
     z-index: 10;
 }
-    
+
+/*titulo superpuesto para programas*/
+
+.titulo-superpuesto2 {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* lo movemos hacia la izquierda */
+    transform: translateY(-50%); /* centrado vertical sin desplazar horizontalmente */
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333; /* texto oscuro para contraste */
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    z-index: 10;
+    /* Fondo visible */
+    background-color: rgba(245, 235, 221, 0.85); /* #f5ebdd con transparencia */
+    padding: 1rem 1.5rem;
+    border-radius: 10px; /* esquinas redondeadas */
+}
+
 /*Texto o parrafo general*/
 .texto {
     font-family: "Mulish", sans-serif;

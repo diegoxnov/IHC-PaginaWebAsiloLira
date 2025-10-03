@@ -2,7 +2,7 @@
 
 namespace AsiloLiraWeb.Controllers
 {
-    public class Programas : Controller
+    public class ProgramasController : Controller
     {
         public IActionResult CuidandoCompartiendo()
         {
@@ -10,6 +10,14 @@ namespace AsiloLiraWeb.Controllers
         }
 
         public IActionResult EquipoDifusion()
+        {
+            return View();
+        }
+        public IActionResult AmigosCorazon()
+        {
+            return View();
+        }
+        public IActionResult ManosTierraVida()
         {
             return View();
         }

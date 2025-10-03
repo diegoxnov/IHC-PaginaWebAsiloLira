@@ -8,5 +8,10 @@ namespace AsiloLiraWeb.Controllers
         {
             return View();
         }
+
+        public IActionResult EquipoDifusion()
+        {
+            return View();
+        }
     }
 }

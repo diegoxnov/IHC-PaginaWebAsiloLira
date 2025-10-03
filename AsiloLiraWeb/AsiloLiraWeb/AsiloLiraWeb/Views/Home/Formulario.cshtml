@@ -6,27 +6,54 @@
 <div class="container m-5">
     <div class="row">
 
-        <div class="col p-2">
-            <h1 class="text-center title2">Ingresa tus datos para ser parte de Team Lira</h1>
+        <div class="col p-2 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="title2 text-center">Ingresa tus datos para ser parte de Team Lira</h1>
             <div class="mt-5">
-                <ul class="mt-4 text-center">
+                <ul class="mt-4 text-center p-0">
                     <li class="text3" style="list-style-type: none;">
                         Inspira a tu generación
                     </li>
                     <li class="text3" style="list-style-type: none;">
                         Se parte de un movimiento
                     </li>
-                    <li class="text3 " style="list-style-type: none;">
+                    <li class="text3" style="list-style-type: none;">
                         Obtén un certificado
                     </li>
                 </ul>
             </div>
-
         </div>
 
         <div class="col pt-4">
+            <h2 class="title3 text-center mb-2">Formulario de Contacto</h2>
             <form asp-action="Formulario" asp-controller="Home">
-                asdasda
+                <div class="mb-2">
+                    <label for= "Nombres" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Angelica Valeria"/>
+                </div>
+                <div class="mb-2">
+                    <label for="Apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="Apellidos" name="Apellidos" placeholder="Castillo Terrones" />
+                </div>
+                <div class="mb-2">
+                    <label for="Edad" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="Edad" name="Edad" placeholder="23" />
+                </div>
+                <div class="mb-2">
+                    <label for="CentroEstudio" class="form-label">Centro de Estudio</label>
+                    <input type="text" class="form-control" id="CentroEstudio" name="CentroEstudio" placeholder="Universidad la Salle" />
+                </div>
+                <div class="mb-2">
+                    <label for="Carrera" class="form-label">Carrera</label>
+                    <input type="text" class="form-control" id="Carrera" name="Carrera" placeholder="Ing. Software" />
+                </div>
+                <div class="mb-2">
+                    <label for="Semestre" class="form-label">Semestre</label>
+                    <input type="text" class="form-control" id="Semestre" name="Semestre" placeholder="Segundo semestre" />
+                </div>
+                <div class="mb-2">
+                    <label for="Ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="Ciudad" name="Ciudad" placeholder="Arequipa" />
+                </div>
             </form>
         </div>
 

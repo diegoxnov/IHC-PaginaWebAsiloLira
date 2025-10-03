@@ -129,6 +129,15 @@ body {
     text-align: justify;
 }
 
+.text3 {
+    font-family: "Mulish", sans-serif;
+    font-size: 2rem;
+    color: #5c4033;
+    font-weight: bold;
+    text-align: justify;
+}
+
+
 /*testo degradado*/
 .texto-wrapper {
     position: relative;

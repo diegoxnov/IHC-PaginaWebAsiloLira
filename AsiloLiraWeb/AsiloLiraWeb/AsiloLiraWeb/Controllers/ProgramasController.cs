@@ -4,6 +4,11 @@ namespace AsiloLiraWeb.Controllers
 {
     public class ProgramasController : Controller
     {
+        public IActionResult Programas()
+        {
+            return View();
+        }
+
         public IActionResult CuidandoCompartiendo()
         {
             return View();

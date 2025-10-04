@@ -18,6 +18,11 @@ namespace AsiloLiraWeb.Controllers
             return View();
         }
 
+        public IActionResult SobreNostros()
+        {
+            return View();
+        }
+
         public IActionResult HomeIndex()
         {
             return View();

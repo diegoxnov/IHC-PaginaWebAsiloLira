@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header>
+    <header >
         <nav class="navbar navbar-light border-bottom " style="background:transparent; border:0px;">
             <div class="container-fluid">
                 <!-- Marca a la izquierda -->
@@ -31,25 +31,28 @@
 
                 <!-- Opciones SOLO dentro del menú hamburguesa -->
                 <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto text-end">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Programas" asp-action="Programas">Programas</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="HomeIndex">Sobre Nosotros</a>
                         </li>
+                        
 
                         <!-- Dropdown dentro del menú hamburguesa -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                aria-expanded="false">
-                                Más Opciones
+                                Programas
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" asp-controller="Programas" asp-action="AmigosCorazon">Amigos de Corazon</a></li>
-                                <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Opción 3</a></li>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:transparent;">
+                                <li><a class="dropdown-item" asp-controller="Programas" asp-action="AmigosCorazon" style="background-color:transparent;">Amigos de Corazon</a></li>
+                                <li><a class="dropdown-item" asp-controller="Programas" asp-action="CuidandoCompartiendo" style="background-color:transparent;">Cuidando y Compartiendo la Mesa</a></li>
+                                <li><a class="dropdown-item" asp-controller="Programas" asp-action="EquipoDifusion" style="background-color:transparent;" >Equipo de Difusion</a></li>
+                                <li><a class="dropdown-item" asp-controller="Programas" asp-action="ManosTierraVida" style="background-color:transparent;" >Manos de Tierra y Vida</a></li>
+                                
                             </ul>
                         </li>
                     </ul>

@@ -18,50 +18,55 @@
 </head>
 <body>
     <header >
-        <nav class="navbar navbar-light border-bottom " style="background:transparent; border:0px;">
+        <nav class="navbar navbar-light border-bottom fixed-top" style="background:transparent; border:0px;">
             <div class="container-fluid">
                 <!-- Marca a la izquierda -->
                 <a class="navbar-brand text2" href="#">Asilo Lira</a>
 
-                <!-- Botón hamburguesa a la derecha -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-                        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Botón hamburguesa (abre el offcanvas) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral"
+                        aria-controls="menuLateral" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Opciones SOLO dentro del menú hamburguesa -->
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav ms-auto text-end">
-                        <li class="nav-item text-end">
-                            <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="HomeIndex">¿Qué es Team Lira?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="SobreNostros">Sobre Nosotros</a>
-                        </li>
-                        
+                <!-- Menú lateral (offcanvas) -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel" style="background-color:#f5ebdd;">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="menuLateralLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                    </div>
 
-                        <!-- Dropdown dentro del menú hamburguesa -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                Programas
-                            </a>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto text-start">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="HomeIndex">¿Qué es Team Lira?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="SobreNostros">Sobre Nosotros</a>
+                            </li>
 
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:transparent;">
-                                <li><a class="dropdown-item" asp-controller="Programas" asp-action="AmigosCorazon" style="background-color:transparent;">Amigos de Corazon</a></li>
-                                <li><a class="dropdown-item" asp-controller="Programas" asp-action="CuidandoCompartiendo" style="background-color:transparent;">Cuidando y Compartiendo la Mesa</a></li>
-                                <li><a class="dropdown-item" asp-controller="Programas" asp-action="EquipoDifusion" style="background-color:transparent;" >Equipo de Difusion</a></li>
-                                <li><a class="dropdown-item" asp-controller="Programas" asp-action="ManosTierraVida" style="background-color:transparent;" >Manos de Tierra y Vida</a></li>
-                                
-                            </ul>
-                        </li>
-                    </ul>
+                            <!-- Dropdown dentro del menú lateral -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Programas
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Programas" asp-action="AmigosCorazon">Amigos de Corazón</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Programas" asp-action="CuidandoCompartiendo">Cuidando y Compartiendo la Mesa</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Programas" asp-action="EquipoDifusion">Equipo de Difusión</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Programas" asp-action="ManosTierraVida">Manos de Tierra y Vida</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
+
     </header>
 
 

@@ -10,7 +10,6 @@ body {
     );
     font-family: Arial, sans-serif;
 }
-
 /*Quitando borde inferior*/
 .navbar{
     border: none !important;

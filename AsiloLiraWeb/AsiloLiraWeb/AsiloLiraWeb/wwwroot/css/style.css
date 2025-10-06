@@ -10,6 +10,13 @@ body {
     );
     font-family: Arial, sans-serif;
 }
+
+/*Quitando borde inferior*/
+.navbar{
+    border: none !important;
+    box-shadow: none !important;
+}
+/*-----------------------*/
 .title1 {
     margin: 3rem;
     font-family: "Mulish", sans-serif;

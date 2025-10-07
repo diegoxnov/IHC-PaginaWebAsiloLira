@@ -33,6 +33,15 @@ namespace AsiloLiraWeb.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Formulario(Voluntario voluntario)
+        {
+            if (!ModelState.IsValid) { 
+                return View(voluntario);
+            }
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

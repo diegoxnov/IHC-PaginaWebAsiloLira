@@ -1,4 +1,5 @@
-﻿
+﻿@model Voluntario
+
 @{
     ViewData["Title"] = "Formulario";
 }
@@ -23,12 +24,15 @@
             </div>
         </div>
 
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
         <div class="col pt-4">
             <h2 class="title3 text-center mb-2">Formulario de Contacto</h2>
             <form asp-action="Formulario" asp-controller="Home">
                 <div class="mb-2">
-                    <label for= "Nombres" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Angelica Valeria"/>
+                    <label asp-for="Nombres" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" asp-for="Nombres" placeholder="Angelica Valeria"/>
+                    <span asp-validation-for="Nombres" class="text-danger"></span>
                 </div>
                 <div class="mb-2">
                     <label for="Apellidos" class="form-label">Apellidos</label>
@@ -54,6 +58,7 @@
                     <label for="Ciudad" class="form-label">Ciudad</label>
                     <input type="text" class="form-control" id="Ciudad" name="Ciudad" placeholder="Arequipa" />
                 </div>
+                <button type="submit" class="btn button2">Enviar</button>
             </form>
         </div>
 

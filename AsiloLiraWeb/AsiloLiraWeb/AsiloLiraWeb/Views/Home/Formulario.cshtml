@@ -35,16 +35,18 @@
                     <span asp-validation-for="Nombres" class="text-danger"></span>
                 </div>
                 <div class="mb-2">
-                    <label for="Apellidos" class="form-label">Apellidos</label>
-                    <input type="text" class="form-control" id="Apellidos" name="Apellidos" placeholder="Castillo Terrones" />
+                    <label asp-for="Apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" asp-for="Apellidos" placeholder="Castillo Terrones" />
+                    <span asp-validation-for="Apellidos" class="text-danger"></span>
                 </div>
                 <div class="mb-2">
-                    <label for="Edad" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="Edad" name="Edad" placeholder="23" />
+                    <label asp-for="Edad" class="form-label">Edad</label>
+                    <input type="text" class="form-control" asp-for="Edad" placeholder="23" />
+                    <span asp-validation-for="Edad" class="text-danger"></span>
                 </div>
                 <div class="mb-2">
                     <label for="CentroEstudio" class="form-label">Centro de Estudio</label>
-                    <input type="text" class="form-control" id="CentroEstudio" name="CentroEstudio" placeholder="Universidad la Salle" />
+                    <input type="text" class="form-control" id="CentroEstudio" name="CentroEstudio" placeholder="Colocar nombre completo: Universidad la Salle" />
                 </div>
                 <div class="mb-2">
                     <label for="Carrera" class="form-label">Carrera</label>

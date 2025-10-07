@@ -7,7 +7,7 @@
 <div class="container m-5">
     <div class="row">
 
-        <div class="col p-2 d-flex flex-column justify-content-center align-items-center">
+        <div class="col p-2 d-flex flex-column justify-content-center align-items-center m-3">
             <h1 class="title2 text-center">Ingresa tus datos para ser parte de Team Lira</h1>
             <div class="mt-5">
                 <ul class="mt-4 text-center p-0">
@@ -26,7 +26,7 @@
 
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        <div class="col pt-4">
+        <div class="col pt-4 m-3">
             <h2 class="title3 text-center mb-2">Formulario de Contacto</h2>
             <form asp-action="Formulario" asp-controller="Home">
                 <div class="mb-2">
@@ -45,6 +45,11 @@
                     <span asp-validation-for="Edad" class="text-danger"></span>
                 </div>
                 <div class="mb-2">
+                    <label asp-for="Telefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" asp-for="Telefono" placeholder="923013167" />
+                    <span asp-validation-for="Telefono" class="text-danger"></span>
+                </div>
+                <div class="mb-2">
                     <label for="CentroEstudio" class="form-label">Centro de Estudio</label>
                     <input type="text" class="form-control" id="CentroEstudio" name="CentroEstudio" placeholder="Colocar nombre completo: Universidad la Salle" />
                 </div>
@@ -59,6 +64,10 @@
                 <div class="mb-2">
                     <label for="Ciudad" class="form-label">Ciudad</label>
                     <input type="text" class="form-control" id="Ciudad" name="Ciudad" placeholder="Arequipa" />
+                </div>
+                <div class="mb-2">
+                    <label for="Distrito" class="form-label">Distrito</label>
+                    <input type="text" class="form-control" id="Distrito" name="Distrito" placeholder="Miraflores" />
                 </div>
                 <button type="submit" class="btn button2">Enviar</button>
             </form>

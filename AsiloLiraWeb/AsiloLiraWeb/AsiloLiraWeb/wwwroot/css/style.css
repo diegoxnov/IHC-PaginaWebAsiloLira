@@ -187,7 +187,7 @@ body {
     font-family: "Mulish", sans-serif;
     color: #5c4033;
     font-weight: bold;
-    text-align: justify;
+    text-align: center;
 }
 
 .text3 {
@@ -198,7 +198,10 @@ body {
     text-align: justify;
 }
 
-
+.textoIcono {
+    font-family: "Mulish", sans-serif;
+    color: #5c4033;
+}
 /*testo degradado*/
 .texto-wrapper {
     position: relative;

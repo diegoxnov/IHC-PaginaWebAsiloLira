@@ -11,30 +11,44 @@
 </div>
 
 
-<div >
+<div class="container">
     <div class="row w-100">
-        <div class="col p-3 pe-0">
-            <h3 class="title2">Manos en la tierra y cuidado de la vida</h3>
-            <div class="container w-75 m-auto p-2" style="background-color:#f5ebdd;">
-                <p class="textprogramas fs6">
+        <div class="col p-1">
+            <h3 class="title2 mb-4 text-start ">Manos en la tierra y cuidado de la vida</h3>
+            <div class="container w-100 m-auto text2 p-2 mb-4" style="background-color:#f5ebdd; border-radius:10px;">
+                <p class="textprogramas fs-6 text-start">
                     Cuida, siembra o atiende: Jóvenes que siembran o cuidan plantas, atienden animales y fomentan un entorno más verde y lleno de vida dentro del asilo.
                 </p>
             </div>
 
             <div class="container w-100 m-auto p-3">
-                <p class="textprogramas fs6">
+                <p class="textprogramas fs6 ">
                     En este equipo podrás conectar directamente con la naturaleza y poner en práctica lo que más te apasiona.
                     Tendrás la opción de elegir entre cuidar y cultivar plantas, o dedicarte al cuidado de los animales. 
                     Sea cual sea tu elección, estarás aportando con tu esfuerzo a un entorno más sano, sostenible y lleno de vida.
                 </p>
+
+            </div>
+            <div class=" d-flex justify-content-between">
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-chat-heart m-2"></i>
+                    <p class="mb-0 fs-6 fw-bold textoIcono">Habilidades en agronomía</p>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-emoji-laughing m-2"></i>
+                    <p class="mb-0 fs-6 fw-bold textoIcono">Habilidades en veterinaria y zootecnia</p>
+                </div>
             </div>
 
         </div>
-        <div class="col p-3 pe-0">
-            <img src="~/imagenes/lavandoPlatos.jpg" class="img-fluid" />
+        <div class="col p-3 text-center">
+            <img src="~/imagenes/vaquitas.jpg" class="img-fluid mb-3 w-75 rounded" />
+            <div class="text-center">
+                <a class="btn button2 text-center fs-6" asp-controller="Home" asp-action="Formulario">¡QUIERO UNIRME!</a>
+            </div>
+
         </div>
+
     </div>
-    <div class="m-2 text-center">
-        <a class="btn button2" asp-controller="Home" asp-action="Formulario">!QUIERO UNIRME¡</a>
-    </div>
+
 </div>

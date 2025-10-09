@@ -4,8 +4,8 @@
 
 
 <div class="position-relative text-center mb-5">
-    <img src="~/imagenes/CompartiendoMesa.jpg" alt="foto monjita" class="w-100 m-auto" />
-    <h1 class="titulo-superpuesto2 w-25">
+    <img src="~/imagenes/CompartiendoMesa.jpg" alt="foto monjita" class="w-100 m-auto rounded" />
+    <h1 class="titulo-superpuesto2 mb-4">
         Amigos de corazón
     </h1>
 </div>
@@ -13,40 +13,42 @@
 
 <div class="container">
     <div class="row w-100">
-        <div class="col p-3">
-            <h3 class="title2 mb-4 text-center">Amigos de corazón</h3>
-            <div class="container w-75 m-auto text2" style="background-color:#f5ebdd;">
-                <p class="textprogramas fs-6">
+        <div class="col p-1">
+            <h3 class="title2 mb-4 text-center ">Amigos de corazón</h3>
+            <div class="container w-100 m-auto text2 p-2 mb-4" style="background-color:#f5ebdd; border-radius:10px;">
+                <p class="textprogramas fs-6 text-start">
                     Conversa, acompaña y ayuda: Jóvenes que comparten tiempo con los adultos mayores, escuchando, apoyando y creando momentos llenos de cariño y significado.
                 </p>
             </div>
 
             <div class="container w-100 m-auto p-3">
-                <p class="textprogramas fs6">
+                <p class="textprogramas fs6 ">
                     En este equipo podrás conectar directamente con los adultos mayores y regalarles tu tiempo. 
                     Podrás acompañarlos en la conversación, apoyarlos en sus actividades o simplemente escucharlos.
                     También tendrás la oportunidad de guiarlos en dinámicas que estimulen su lucidez y ejercicio mental.
                 </p>
 
             </div>
-            <div class="container">
-                <h4 class="title2 text-centeru ">Habilidades Requeridas</h4>
+            <div class=" d-flex justify-content-between">
                 <div class="d-flex align-items-center mb-2">
                     <i class="bi bi-chat-heart m-2"></i>
-                    <p class="mb-0">Habilidad de comunicación</p>
+                    <p class="mb-0 fs-6 fw-bold textoIcono">Habilidad de comunicación</p>
                 </div>
                 <div class="d-flex align-items-center mb-2">
                     <i class="bi bi-emoji-laughing m-2"></i>
-                    <p class="mb-0">Empatía y alegría</p>
+                    <p class="mb-0 fs-6 fw-bold textoIcono">Habilidades en psicología o dinámicas</p>
                 </div>
             </div>
             
         </div>
-        <div class="col p-3">
-            <img src="~/imagenes/lavandoPlatos.jpg" class="img-fluid" />
+        <div class="col p-3 text-center">
+            <img src="~/imagenes/ImagenInicio.jpg" class="img-fluid mb-3 w-75 rounded" />
+            <div class="text-center">
+                <a class="btn button2 text-center fs-6" asp-controller="Home" asp-action="Formulario">¡QUIERO UNIRME!</a>
+            </div>
+
         </div>
+
     </div>
-    <div class="m-2 text-center">
-        <a class="btn button2" asp-controller="Home" asp-action="Formulario">!QUIERO UNIRME¡</a>
-    </div>
+
 </div>

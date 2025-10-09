@@ -7,10 +7,10 @@
 <div class="container m-5">
     <div class="row">
 
-        <div class="col p-2 d-flex flex-column justify-content-center align-items-center m-3">
+        <div class="col p-2 d-flex flex-column justify-content-center align-items-start m-3 texto-wrapper2">
             <h1 class="title2 text-center">Ingresa tus datos para ser parte de Team Lira</h1>
             <div class="mt-5">
-                <ul class="mt-4 text-center p-0">
+                <ul class=" pe-5">
                     <li class="text3" style="list-style-type: none;">
                         Inspira a tu generación
                     </li>
@@ -26,50 +26,52 @@
 
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        <div class="col pt-4 m-3">
-            <h2 class="title3 text-center mb-2">Formulario de Contacto</h2>
+        <div class="col p-4 m-3" style="background-color:#f5ebdd;">
             <form asp-action="Formulario" asp-controller="Home">
                 <div class="mb-2">
-                    <label asp-for="Nombres" class="form-label">Nombre</label>
+                    <label asp-for="Nombres" class="form-label title4">Nombre</label>
                     <input type="text" class="form-control" asp-for="Nombres" placeholder="Angelica Valeria"/>
                     <span asp-validation-for="Nombres" class="text-danger"></span>
                 </div>
                 <div class="mb-2">
-                    <label asp-for="Apellidos" class="form-label">Apellidos</label>
+                    <label asp-for="Apellidos" class="form-label title4">Apellidos</label>
                     <input type="text" class="form-control" asp-for="Apellidos" placeholder="Castillo Terrones" />
                     <span asp-validation-for="Apellidos" class="text-danger"></span>
                 </div>
                 <div class="mb-2">
-                    <label asp-for="Edad" class="form-label">Edad</label>
+                    <label asp-for="Edad" class="form-label title4">Edad</label>
                     <input type="text" class="form-control" asp-for="Edad" placeholder="23" />
                     <span asp-validation-for="Edad" class="text-danger"></span>
                 </div>
                 <div class="mb-2">
-                    <label asp-for="Telefono" class="form-label">Telefono</label>
+                    <label asp-for="Telefono" class="form-label title4">Telefono</label>
                     <input type="text" class="form-control" asp-for="Telefono" placeholder="923013167" />
                     <span asp-validation-for="Telefono" class="text-danger"></span>
                 </div>
                 <div class="mb-2">
-                    <label for="CentroEstudio" class="form-label">Centro de Estudio</label>
+                    <label for="CentroEstudio" class="form-label title4">Centro de Estudio</label>
                     <input type="text" class="form-control" id="CentroEstudio" name="CentroEstudio" placeholder="Colocar nombre completo: Universidad la Salle" />
                 </div>
                 <div class="mb-2">
-                    <label for="Carrera" class="form-label">Carrera</label>
+                    <label for="Carrera" class="form-label title4">Carrera</label>
                     <input type="text" class="form-control" id="Carrera" name="Carrera" placeholder="Ing. Software" />
                 </div>
                 <div class="mb-2">
-                    <label for="Semestre" class="form-label">Semestre</label>
+                    <label for="Semestre" class="form-label title4">Semestre</label>
                     <input type="text" class="form-control" id="Semestre" name="Semestre" placeholder="Segundo semestre" />
                 </div>
                 <div class="mb-2">
-                    <label for="Ciudad" class="form-label">Ciudad</label>
+                    <label for="Ciudad" class="form-label title4">Ciudad</label>
                     <input type="text" class="form-control" id="Ciudad" name="Ciudad" placeholder="Arequipa" />
                 </div>
-                <div class="mb-2">
-                    <label for="Distrito" class="form-label">Distrito</label>
+                <div class="mb-4">
+                    <label for="Distrito" class="form-label title4">Distrito</label>
                     <input type="text" class="form-control" id="Distrito" name="Distrito" placeholder="Miraflores" />
                 </div>
-                <button type="submit" class="btn button2">Enviar</button>
+                <div class="text-center" >
+                    <button type="submit" class="btn button pe-4 ps-4">Enviar</button>
+                </div>
+
             </form>
         </div>
 

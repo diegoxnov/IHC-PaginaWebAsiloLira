@@ -19,18 +19,23 @@
 <body>
     <header >
         <nav class="navbar navbar-light border-bottom" style="background:transparent; border:0px;">
-            <div class="container-fluid">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+
                 <!-- Marca a la izquierda -->
-                <a class="navbar-brand text2" asp-controller="Home" asp-action="HomeIndex">Asilo Lira</a>
+                <a class="navbar-brand d-flex align-items-center gap-0 mb-0" asp-controller="Home" asp-action="HomeIndex">
+                    <img src="~/imagenes/monjaIconSinFondo.png" alt="Logo" width="100" height="60" class="d-inline-block align-text-top">
+                    <span class="text2">Asilo Lira</span>
+                </a>
+
                 <!--Botonn team lira-->
                 <div class="d-flex align-items-center">
                     <!-- Botón TEAM LIRA -->
                     <a class="btn me-4 button3 p-1" asp-controller="Home" asp-action="Formulario">TEAM LIRA</a>
 
                     <!-- Botón hamburguesa -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral"
+                    <button class="navbar-toggler button4" style="border:solid 1px #4b4b4b;" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral"
                             aria-controls="menuLateral" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon">  </span>
                     </button>
                 </div>
 

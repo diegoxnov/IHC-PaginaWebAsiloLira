@@ -18,16 +18,21 @@
 </head>
 <body>
     <header >
-        <nav class="navbar navbar-light border-bottom fixed-top" style="background:transparent; border:0px;">
+        <nav class="navbar navbar-light border-bottom" style="background:transparent; border:0px;">
             <div class="container-fluid">
                 <!-- Marca a la izquierda -->
                 <a class="navbar-brand text2" asp-controller="Home" asp-action="HomeIndex">Asilo Lira</a>
+                <!--Botonn team lira-->
+                <div class="d-flex align-items-center">
+                    <!-- Botón TEAM LIRA -->
+                    <a class="btn me-4 button3 p-1" asp-controller="Home" asp-action="Formulario">TEAM LIRA</a>
 
-                <!-- Botón hamburguesa (abre el offcanvas) -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral"
-                        aria-controls="menuLateral" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!-- Botón hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral"
+                            aria-controls="menuLateral" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
 
                 <!-- Menú lateral (offcanvas) -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel" style="background-color:#f5ebdd;">

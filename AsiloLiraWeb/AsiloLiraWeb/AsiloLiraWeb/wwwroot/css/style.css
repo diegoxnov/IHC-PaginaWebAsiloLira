@@ -57,6 +57,13 @@ body {
     font-weight: bold;
 }
 
+.button3 {
+    border: solid 1px #4b4b4b;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #4b4b4b;
+}
+
 .button:hover {
     background-color: #e07b5a;
     color: #fff;
@@ -64,6 +71,12 @@ body {
 }
 
 .button2:hover {
+    background-color: #e07b5a;
+    color: #fff;
+    box-shadow: -3px 3px 6px rgba(0,0,0,0.4);
+}
+
+.button3:hover {
     background-color: #e07b5a;
     color: #fff;
     box-shadow: -3px 3px 6px rgba(0,0,0,0.4);

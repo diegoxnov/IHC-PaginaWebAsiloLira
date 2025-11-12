@@ -49,12 +49,17 @@
                     <span asp-validation-for="Telefono" class="text-danger"></span>
                 </div>
                 <div class="mb-2">
-                    <label for="CentroEstudio" class="form-label title4">Centro de Estudio</label>
-                    <input type="text" class="form-control" id="CentroEstudio" name="CentroEstudio" placeholder="Colocar nombre completo: Universidad la Salle" />
+                    <label asp-for="EntidadEducativa" class="form-label title4">Centro de Estudio</label>
+                    <input type="text" class="form-control" asp-for="EntidadEducativa" placeholder="Colocar nombre completo: Universidad la Salle" />
                 </div>
                 <div class="mb-2">
-                    <label for="Carrera" class="form-label title4">Carrera</label>
-                    <input type="text" class="form-control" id="Carrera" name="Carrera" placeholder="Ing. Software" />
+                    <label asp-for="DNI" class="form-label title4">DNI</label>
+                    <input type="text" class="form-control" asp-for="DNI" placeholder="12345678" />
+                    <span asp-validation-for="DNI" class="text-danger"></span>
+                </div>
+                <div class="mb-2">
+                    <label asp-for="Carrera" class="form-label title4">Carrera</label>
+                    <input type="text" class="form-control" asp-for="Carrera" placeholder="Ing. Software" />
                 </div>
                 <div class="mb-2">
                     <label for="Semestre" class="form-label title4">Semestre</label>
@@ -69,7 +74,7 @@
                     <input type="text" class="form-control" id="Distrito" name="Distrito" placeholder="Miraflores" />
                 </div>
                 <div class="text-center" >
-                    <button type="submit" class="btn button pe-4 ps-4">Enviar</button>
+                    <button type="submit" class="btn button pe-4 ps-4" asp-action="HomeIndex" asp-controller="Home">Enviar</button>
                 </div>
 
             </form>

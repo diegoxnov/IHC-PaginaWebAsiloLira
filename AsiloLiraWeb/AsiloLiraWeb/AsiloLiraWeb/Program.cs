@@ -1,4 +1,11 @@
+using AsiloLiraWeb.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Registramos el DbContext usando la cadena "AsiloDb" de appsettings.json
+builder.Services.AddDbContext<AsiloContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AsiloDb")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
